@@ -69,12 +69,12 @@
       <version>2.5</version>
     </dependency>
 
-    <!-- uncomment this to get JSON support
     <dependency>
-        <groupId>org.glassfish.jersey.media</groupId>
-        <artifactId>jersey-media-json-binding</artifactId>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat-catalina</artifactId>
+      <version>7.0.42</version>
+      <scope>provided</scope>
     </dependency>
-    -->
 
       <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
       <dependency>

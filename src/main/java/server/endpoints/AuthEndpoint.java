@@ -86,7 +86,7 @@ public class AuthEndpoint {
           log.writeLog(this.getClass().getName(),this.getClass(),("AuthUser was successful and user was authorized - " +
                   "User active was: " + authUser.getEmail()),0);
 
-          return Response.status(200).type("plain/text").entity(token).build();
+          return Response.status(200).type("json/application").entity(new Gson().toJson(token)).build();
       } else {
 
           log.writeLog(this.getClass().getName(),this.getClass(),("AuthUser was successful but user not authorized - " +

@@ -154,7 +154,7 @@ public class UserEndpoint {
         log.writeLog("DB", this.getClass(), ("createUser was successful - " + "User active was: " +
                 AuthenticationFilter.userEmailByToken + "\n"), 0);
 
-        return Response.status(201).type("text/plain").entity("User Created").build();
+        return Response.status(201).type("json/application").entity(new Gson().toJson("User was created")).build();
 
     }
 
